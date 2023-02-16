@@ -20,6 +20,7 @@
 		220ECDB8299EA21E00ABC199 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 220ECDB7299EA21E00ABC199 /* FirebaseAuth */; };
 		220ECDBA299EA21E00ABC199 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 220ECDB9299EA21E00ABC199 /* FirebaseFirestore */; };
 		220ECDBC299EA21E00ABC199 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 220ECDBB299EA21E00ABC199 /* FirebaseStorage */; };
+		220ECDC3299EA7ED00ABC199 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 220ECDC2299EA7ED00ABC199 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		220ECDAD299E9F5C00ABC199 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		220ECDAF299E9F9600ABC199 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		220ECDB2299E9FFC00ABC199 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		220ECDC2299EA7ED00ABC199 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				220ECD8D299E9D8900ABC199 /* SceneDelegate.swift */,
 				220ECD94299E9D8A00ABC199 /* Assets.xcassets */,
 				220ECD96299E9D8A00ABC199 /* LaunchScreen.storyboard */,
+				220ECDC2299EA7ED00ABC199 /* GoogleService-Info.plist */,
 				220ECD99299E9D8A00ABC199 /* Info.plist */,
 			);
 			path = MessageViewCode;
@@ -209,6 +212,7 @@
 			files = (
 				220ECD98299E9D8A00ABC199 /* LaunchScreen.storyboard in Resources */,
 				220ECD95299E9D8A00ABC199 /* Assets.xcassets in Resources */,
+				220ECDC3299EA7ED00ABC199 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
