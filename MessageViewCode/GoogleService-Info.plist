@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1074701129252-tq3n1ephr7gtpld0c63ka5310ffrofd8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1074701129252-tq3n1ephr7gtpld0c63ka5310ffrofd8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBqZqbqmugaC9K5LziR6HgUZNf9eDmbY7E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1074701129252</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>sevio.MessageViewCode</string>
+	<key>PROJECT_ID</key>
+	<string>messageviewcode-e1f2e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>messageviewcode-e1f2e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1074701129252:ios:5d493bdeae1f3db61a6ab1</string>
+</dict>
+</plist>
