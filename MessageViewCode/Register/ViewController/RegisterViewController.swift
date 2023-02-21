@@ -6,13 +6,14 @@
 //
 
 import UIKit
-import FirebaseAuth
+import Firebase
 
 class RegisterViewController: UIViewController {
     
     var registerScreen: RegisterScreen?
     
     var auth: Auth?
+    var firestore: Firestore?
     var alert: Alert?
     
     override func loadView() {
@@ -26,6 +27,7 @@ class RegisterViewController: UIViewController {
         // Ou self.registerScreen?.delegate = self
         self.registerScreen?.configTextFieldDelegate(delegate: self)
         self.auth = Auth.auth()
+        self.firestore = Firestore.firestore()
         self.alert = Alert(controller: self)
     }
 }
@@ -55,7 +57,21 @@ extension RegisterViewController: RegisterScreenProtocol {
             if error != nil {
                 self.alert?.getAlert(titulo: "Atenção", mensagem: "\(String(describing: error!.localizedDescription))")
             } else {
+                
+                
+                // Salvar Dados no Firebase
+                if let idUsuario = result?.user.uid { // Todo usuário tem um UID no Firebase
+                    self.firestore?.collection("usuarios").document(idUsuario).setData([
+                        "nome": self.registerScreen?.getName() ?? "",
+                        "email": self.registerScreen?.getEmail() ?? "",
+                        "id": idUsuario
+                    ])
+                }
+                
+                
                 self.alert?.getAlert(titulo: "Sucesso", mensagem: "Sucesso ao Registrar.", completion: {
+                    
+                    
                     self.navigationController?.popViewController(animated: true)
                 })
             }
