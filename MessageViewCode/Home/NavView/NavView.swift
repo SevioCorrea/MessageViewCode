@@ -86,7 +86,7 @@ class NavView: UIView {
     lazy var chatButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setImage(UIImage(named: "message")?.withRenderingMode(.alwaysTemplate), for: .normal)
+        button.setImage(UIImage(systemName: "message")?.withRenderingMode(.alwaysTemplate), for: .normal)
         button.tintColor = .systemPink
         button.addTarget(self, action: #selector(self.tappedChat), for: .touchUpInside)
         
@@ -115,6 +115,24 @@ class NavView: UIView {
         self.contactButton.tintColor = .systemPink
     }
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.addElement()
+        self.setUpConstraints()
+    }
+    
+    func addElement() {
+        self.addSubview(self.navBackgroundView)
+        self.navBackgroundView.addSubview(self.navBar)
+        self.navBar.addSubview(self.searchBar)
+        self.navBar.addSubview(self.stackView)
+        self.searchBar.addSubview(self.searchLabel)
+        self.searchBar.addSubview(self.searchButton)
+        self.stackView.addArrangedSubview(self.chatButton)
+        self.stackView.addArrangedSubview(self.contactButton)
+        
+    }
+    
     func setUpConstraints() {
         NSLayoutConstraint.activate([
         
@@ -130,7 +148,7 @@ class NavView: UIView {
             
             self.searchBar.leadingAnchor.constraint(equalTo: self.navBar.leadingAnchor, constant: 30),
             self.searchBar.centerYAnchor.constraint(equalTo: self.navBar.centerYAnchor),
-            self.searchBar.trailingAnchor.constraint(equalTo: self.navBar.leadingAnchor, constant: -20),
+            self.searchBar.trailingAnchor.constraint(equalTo: self.stackView.leadingAnchor, constant: -20),
             self.searchBar.heightAnchor.constraint(equalToConstant: 55),
             
             self.stackView.trailingAnchor.constraint(equalTo: self.navBar.trailingAnchor, constant: -30),
@@ -139,7 +157,7 @@ class NavView: UIView {
             self.stackView.heightAnchor.constraint(equalToConstant: 30),
             
             self.searchLabel.leadingAnchor.constraint(equalTo: self.searchBar.leadingAnchor, constant: 25),
-            self.searchBar.centerYAnchor.constraint(equalTo: self.searchBar.centerYAnchor),
+            self.searchLabel.centerYAnchor.constraint(equalTo: self.searchBar.centerYAnchor),
             
             self.searchButton.trailingAnchor.constraint(equalTo: self.searchBar.trailingAnchor, constant: -20),
             self.searchButton.centerYAnchor.constraint(equalTo: self.searchBar.centerYAnchor),
@@ -147,24 +165,6 @@ class NavView: UIView {
             self.searchButton.heightAnchor.constraint(equalToConstant: 20),
             
         ])
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.setUpConstraints()
-        self.addElement()
-    }
-    
-    func addElement() {
-        self.addSubview(self.navBackgroundView)
-        self.navBackgroundView.addSubview(self.navBar)
-        self.navBar.addSubview(self.searchBar)
-        self.navBar.addSubview(self.stackView)
-        self.searchBar.addSubview(self.searchLabel)
-        self.searchBar.addSubview(self.searchButton)
-        self.stackView.addArrangedSubview(self.chatButton)
-        self.stackView.addArrangedSubview(self.contactButton)
-        
     }
     
     required init?(coder: NSCoder) {
