@@ -50,6 +50,7 @@ class LoginScreen: UIView {
         textField.keyboardType = .emailAddress
         textField.placeholder = "Email"
         textField.textColor = .darkGray
+        textField.text = "ola@hotmail.com"
         
         return textField
     }()
@@ -64,6 +65,7 @@ class LoginScreen: UIView {
         textField.keyboardType = .default
         textField.placeholder = "Senha"
         textField.textColor = .darkGray
+        textField.text = "ola12345"
         
         return textField
     }()
