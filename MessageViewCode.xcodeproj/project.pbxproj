@@ -21,6 +21,7 @@
 		220ECDBA299EA21E00ABC199 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 220ECDB9299EA21E00ABC199 /* FirebaseFirestore */; };
 		220ECDBC299EA21E00ABC199 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 220ECDBB299EA21E00ABC199 /* FirebaseStorage */; };
 		220ECDC3299EA7ED00ABC199 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 220ECDC2299EA7ED00ABC199 /* GoogleService-Info.plist */; };
+		22330B6A29ABD4DB00AA6C75 /* MessageAllModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22330B6929ABD4DB00AA6C75 /* MessageAllModel.swift */; };
 		2236424029A64E4D00176853 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236423F29A64E4D00176853 /* HomeVC.swift */; };
 		2236424329A64EBE00176853 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236424229A64EBE00176853 /* HomeScreen.swift */; };
 		2236424629A64F6600176853 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236424529A64F6600176853 /* NavView.swift */; };
@@ -44,6 +45,7 @@
 		220ECDAF299E9F9600ABC199 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		220ECDB2299E9FFC00ABC199 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		220ECDC2299EA7ED00ABC199 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		22330B6929ABD4DB00AA6C75 /* MessageAllModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAllModel.swift; sourceTree = "<group>"; };
 		2236423F29A64E4D00176853 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2236424229A64EBE00176853 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		2236424529A64F6600176853 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		220ECD8A299E9D8900ABC199 /* MessageViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				22330B6829ABD4C400AA6C75 /* Model */,
 				22D6C93E29A505D5002E52B7 /* Utils */,
 				220ECDB1299E9FEF00ABC199 /* Alert */,
 				2236423E29A64E0600176853 /* Home */,
@@ -162,6 +165,14 @@
 				220ECDB2299E9FFC00ABC199 /* Alert.swift */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		22330B6829ABD4C400AA6C75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22330B6929ABD4DB00AA6C75 /* MessageAllModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2236423E29A64E0600176853 /* Home */ = {
@@ -307,6 +318,7 @@
 				220ECDA3299E9E2800ABC199 /* LoginViewController.swift in Sources */,
 				22D6C94029A5060E002E52B7 /* Custom.swift in Sources */,
 				22D6C94629A506B9002E52B7 /* Extension+UIView.swift in Sources */,
+				22330B6A29ABD4DB00AA6C75 /* MessageAllModel.swift in Sources */,
 				220ECDAE299E9F5C00ABC199 /* RegisterViewController.swift in Sources */,
 				2236424629A64F6600176853 /* NavView.swift in Sources */,
 				2236424329A64EBE00176853 /* HomeScreen.swift in Sources */,
