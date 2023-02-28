@@ -25,6 +25,7 @@
 		2236424029A64E4D00176853 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236423F29A64E4D00176853 /* HomeVC.swift */; };
 		2236424329A64EBE00176853 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236424229A64EBE00176853 /* HomeScreen.swift */; };
 		2236424629A64F6600176853 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236424529A64F6600176853 /* NavView.swift */; };
+		22B422C929AE4C4A0037BC2C /* MessageLastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B422C829AE4C4A0037BC2C /* MessageLastCollectionViewCell.swift */; };
 		22D6C94029A5060E002E52B7 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C93F29A5060E002E52B7 /* Custom.swift */; };
 		22D6C94229A50633002E52B7 /* Extension+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C94129A50633002E52B7 /* Extension+Button.swift */; };
 		22D6C94429A50676002E52B7 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C94329A50676002E52B7 /* Extension+String.swift */; };
@@ -49,6 +50,7 @@
 		2236423F29A64E4D00176853 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2236424229A64EBE00176853 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		2236424529A64F6600176853 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		22B422C829AE4C4A0037BC2C /* MessageLastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLastCollectionViewCell.swift; sourceTree = "<group>"; };
 		22D6C93F29A5060E002E52B7 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
 		22D6C94129A50633002E52B7 /* Extension+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Button.swift"; sourceTree = "<group>"; };
 		22D6C94329A50676002E52B7 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				22D6C93E29A505D5002E52B7 /* Utils */,
 				220ECDB1299E9FEF00ABC199 /* Alert */,
 				2236423E29A64E0600176853 /* Home */,
+				2236423F29A64E4D00176853 /* HomeVC.swift */,
 				220ECDAA299E9F2800ABC199 /* Register */,
 				220ECD9F299E9DF300ABC199 /* Login */,
 				220ECD8B299E9D8900ABC199 /* AppDelegate.swift */,
@@ -178,7 +181,7 @@
 		2236423E29A64E0600176853 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				2236423F29A64E4D00176853 /* HomeVC.swift */,
+				22B422C729AE4C1C0037BC2C /* Cell */,
 				2236424429A64F4100176853 /* NavView */,
 				2236424129A64EA900176853 /* Screen */,
 			);
@@ -199,6 +202,14 @@
 				2236424529A64F6600176853 /* NavView.swift */,
 			);
 			path = NavView;
+			sourceTree = "<group>";
+		};
+		22B422C729AE4C1C0037BC2C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				22B422C829AE4C4A0037BC2C /* MessageLastCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		22D6C93E29A505D5002E52B7 /* Utils */ = {
@@ -327,6 +338,7 @@
 				22D6C94229A50633002E52B7 /* Extension+Button.swift in Sources */,
 				2236424029A64E4D00176853 /* HomeVC.swift in Sources */,
 				220ECD8E299E9D8900ABC199 /* SceneDelegate.swift in Sources */,
+				22B422C929AE4C4A0037BC2C /* MessageLastCollectionViewCell.swift in Sources */,
 				220ECDB3299E9FFC00ABC199 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,6 +25,7 @@ class HomeScreen: UIView {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()
         layout.scrollDirection = .vertical
         collection.setCollectionViewLayout(layout, animated: true)
+        collection.register(MessageLastCollectionViewCell.self, forCellWithReuseIdentifier: MessageLastCollectionViewCell.identifier)
         
         return collection
     }()
