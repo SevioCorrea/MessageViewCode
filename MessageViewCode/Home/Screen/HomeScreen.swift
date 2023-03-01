@@ -26,6 +26,7 @@ class HomeScreen: UIView {
         layout.scrollDirection = .vertical
         collection.setCollectionViewLayout(layout, animated: true)
         collection.register(MessageLastCollectionViewCell.self, forCellWithReuseIdentifier: MessageLastCollectionViewCell.identifier)
+        collection.register(MessageDetailCollectionViewCell.self, forCellWithReuseIdentifier: MessageDetailCollectionViewCell.identifier)
         
         return collection
     }()
