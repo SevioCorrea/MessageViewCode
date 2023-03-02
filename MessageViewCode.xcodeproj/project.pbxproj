@@ -25,6 +25,7 @@
 		2236424029A64E4D00176853 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236423F29A64E4D00176853 /* HomeVC.swift */; };
 		2236424329A64EBE00176853 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236424229A64EBE00176853 /* HomeScreen.swift */; };
 		2236424629A64F6600176853 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236424529A64F6600176853 /* NavView.swift */; };
+		227BF53429B0D16500B408F0 /* ContatoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227BF53329B0D16500B408F0 /* ContatoController.swift */; };
 		22B422C929AE4C4A0037BC2C /* MessageLastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B422C829AE4C4A0037BC2C /* MessageLastCollectionViewCell.swift */; };
 		22B422CB29AE6BE60037BC2C /* MessageDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B422CA29AE6BE60037BC2C /* MessageDetailCollectionViewCell.swift */; };
 		22D6C94029A5060E002E52B7 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C93F29A5060E002E52B7 /* Custom.swift */; };
@@ -51,6 +52,7 @@
 		2236423F29A64E4D00176853 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2236424229A64EBE00176853 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		2236424529A64F6600176853 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		227BF53329B0D16500B408F0 /* ContatoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoController.swift; sourceTree = "<group>"; };
 		22B422C829AE4C4A0037BC2C /* MessageLastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLastCollectionViewCell.swift; sourceTree = "<group>"; };
 		22B422CA29AE6BE60037BC2C /* MessageDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		22D6C93F29A5060E002E52B7 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 		2236423E29A64E0600176853 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				227BF53229B0D14F00B408F0 /* Controller */,
 				22B422C729AE4C1C0037BC2C /* Cell */,
 				2236424429A64F4100176853 /* NavView */,
 				2236424129A64EA900176853 /* Screen */,
@@ -204,6 +207,14 @@
 				2236424529A64F6600176853 /* NavView.swift */,
 			);
 			path = NavView;
+			sourceTree = "<group>";
+		};
+		227BF53229B0D14F00B408F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				227BF53329B0D16500B408F0 /* ContatoController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		22B422C729AE4C1C0037BC2C /* Cell */ = {
@@ -335,6 +346,7 @@
 				22330B6A29ABD4DB00AA6C75 /* MessageAllModel.swift in Sources */,
 				220ECDAE299E9F5C00ABC199 /* RegisterViewController.swift in Sources */,
 				2236424629A64F6600176853 /* NavView.swift in Sources */,
+				227BF53429B0D16500B408F0 /* ContatoController.swift in Sources */,
 				2236424329A64EBE00176853 /* HomeScreen.swift in Sources */,
 				220ECDA5299E9E5D00ABC199 /* LoginScreen.swift in Sources */,
 				220ECD8C299E9D8900ABC199 /* AppDelegate.swift in Sources */,
