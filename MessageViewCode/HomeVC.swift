@@ -41,6 +41,7 @@ class HomeVC: UIViewController {
         self.configCollectionView()
         self.configAlert()
         self.configIdentifierFirebase()
+        self.configContato()
         self.addListenerRecuperarConversa()
     }
     
@@ -114,15 +115,46 @@ class HomeVC: UIViewController {
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        // Se estiver na tela de contatos, mostra as células dos contatos + a célula de Adicionar Contato.
+        // Verificando em qual tela está. screenContact ou listaConversas.
+        if self.screenContact ?? false {
+            return self.listContact.count + 1
+        } else {
+            return self.listaConversas.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        if self.screenContact ?? false {
+            if indexPath.row == self.listContact.count {
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MessageLastCollectionViewCell.identifier, for: indexPath)
+                return cell
+            } else {
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MessageDetailCollectionViewCell.identifier, for: indexPath) as! MessageDetailCollectionViewCell
+                cell.setUpViewContact(contact: self.listContact[indexPath.row])
+                return cell
+            }
+        } else {
+            // Célula de Conversas
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MessageDetailCollectionViewCell.identifier, for: indexPath) as! MessageDetailCollectionViewCell
+            cell.setUpViewChat(chat: self.listaConversas[indexPath.row])
+            return cell
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath)
+        if self.screenContact ?? false {
+            if indexPath.row == self.listContact.count {
+                self.alert?.addContact(completion: { value in
+                    self.contato?.addContact(email: value, emailUsuarioLogado: self.emailUsuarioLogado ?? "", idUsuario: self.idUsuarioLogado ?? "")
+                })
+            } else {
+                
+            }
+        } else {
+            
+            
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -140,6 +172,7 @@ extension HomeVC: NavViewProtocol {
         case .contact:
             self.screenContact = true
             self.getContato()
+            self.conversasListener?.remove()
         case .chat:
             self.screenContact = false
             self.addListenerRecuperarConversa()

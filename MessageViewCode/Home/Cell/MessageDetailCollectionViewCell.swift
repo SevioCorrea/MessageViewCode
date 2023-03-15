@@ -74,8 +74,12 @@ class MessageDetailCollectionViewCell: UICollectionViewCell {
     }
     
     func setUserName(label: String) {
-        let attributText = NSMutableAttributedString(string: label, attributes: [NSAttributedString.Key.font : UIFont(name: CustomFont.poppinsMedium, size: 15) ?? UIFont(), NSAttributedString.Key.foregroundColor: UIColor.darkGray])
-        self.label.attributedText = attributText
+        if let font = UIFont(name: "Helvetica Neue", size: 15) {
+            let attributedText = NSMutableAttributedString(string: label, attributes: [NSAttributedString.Key.font : font, NSAttributedString.Key.foregroundColor: UIColor.darkGray])
+            self.label.attributedText = attributedText
+        }
+//        self.label.font = UIFont.boldSystemFont(ofSize: 15)
+//        self.label.tintColor = .black
     }
     
 }
